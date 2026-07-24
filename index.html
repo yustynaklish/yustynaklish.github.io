@@ -9,9 +9,108 @@
       <body>
         <h1>Yustyna's Website: A Work In Progress</h1>
         <a href="/links.html">Links</a>
-        <br><br>
-        <a href="/wikipedia.html" style="font-family: 'Comic Sans MS', cursive; font-size: 22px; color: #ff00ff; background-color: #000033; border: 3px dashed #ffff00; padding: 8px 14px; text-decoration: none; text-shadow: 2px 2px #ff0000; animation: blink 0.7s step-start infinite; display: inline-block;">&#x2728; MY FAVE WIKI PAGES &#x2728; CLICK HERE &#x1F4A5;</a>
-        <style>@keyframes blink { 50% { opacity: 0; } }</style>
+
+        <style>
+          .popup {
+            display: inline-block;
+            margin-top: 60px;
+            font-family: "MS Sans Serif", "Tahoma", Arial, sans-serif;
+            font-size: 11px;
+            border: 2px solid #000080;
+            box-shadow: inset -1px -1px #00007f, inset 1px 1px #dfdfdf;
+            background: #d4d0c8;
+            width: 290px;
+            text-align: left;
+          }
+          .popup-titlebar {
+            background: linear-gradient(to right, #000080, #1084d0);
+            color: white;
+            padding: 3px 5px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            user-select: none;
+          }
+          .popup-titlebar-buttons {
+            display: flex;
+            gap: 2px;
+          }
+          .popup-titlebar-btn {
+            background: #d4d0c8;
+            border: 1px solid;
+            border-color: #fff #808080 #808080 #fff;
+            width: 16px;
+            height: 14px;
+            font-size: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: bold;
+          }
+          .popup-body {
+            padding: 14px 12px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+          }
+          .popup-content {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+          }
+          .popup-text {
+            font-size: 11px;
+            color: #000;
+            line-height: 1.5;
+          }
+          .popup-btn {
+            display: inline-block;
+            background: #d4d0c8;
+            border: 2px solid;
+            border-color: #fff #808080 #808080 #fff;
+            padding: 3px 24px;
+            font-size: 11px;
+            font-family: "MS Sans Serif", "Tahoma", Arial, sans-serif;
+            text-decoration: none;
+            color: #000;
+          }
+          .popup-btn:hover {
+            border-color: #808080 #fff #fff #808080;
+          }
+          .popup-btn:active {
+            border-color: #808080 #fff #fff #808080;
+          }
+        </style>
+
+        <br><br><br>
+
+        <div class="popup">
+          <div class="popup-titlebar">
+            <span>&#x26A0; Security Alert</span>
+            <div class="popup-titlebar-buttons">
+              <div class="popup-titlebar-btn">_</div>
+              <div class="popup-titlebar-btn">&#x25A1;</div>
+              <div class="popup-titlebar-btn">&#x2715;</div>
+            </div>
+          </div>
+          <div class="popup-body">
+            <div class="popup-content">
+              <img src="/assets/images/cat_YJYSDBVVANIJMRLG2PMB62XH6E4GLJB5.gif" alt="cat" style="width:64px; image-rendering: pixelated;">
+              <div class="popup-text">
+                <strong>CAT DETECTED</strong><br><br>
+                A cat has infiltrated<br>
+                your computer.<br><br>
+                Click OK to see her<br>
+                Wikipedia pages.
+              </div>
+            </div>
+            <a href="/wikipedia.html" class="popup-btn">OK</a>
+          </div>
+        </div>
 
       </body>
 
